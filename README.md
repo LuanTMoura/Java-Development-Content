@@ -1,5 +1,8 @@
-# Java Development Content
- Every Java Development content that I've study organized by topic.
+<div align="center"><img decoding="async" loading="lazy" width="500" height="260" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/java_logo_icon_168609.png"></div>
+</br>
+</br>
+</br>
+ Every Java Development content that I've study organized.
 
 # Repositories of courses, video courses and tutorials
 
