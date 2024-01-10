@@ -6,7 +6,7 @@
 
 # Repositories of courses, video courses and tutorials
 
-- [Course Java - Curso em Video](https://github.com/LuanTMoura/Aulas-Java-Curso-em-Video);
+- [Course Java - Java Basics](https://github.com/LuanTMoura/Aulas-Java-Curso-em-Video);
 - [Video course - Java CRUD](https://github.com/LuanTMoura/Study-CRUD-Java);
 - [Video tutotials - Java Exceptions](https://github.com/LuanTMoura/Study-Exceptions);
 - [Video tutroials - Java Maven](https://github.com/LuanTMoura/Study-Maven);
