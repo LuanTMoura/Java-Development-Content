@@ -8,9 +8,9 @@
 
 - [Course Java - Java Basics](https://github.com/LuanTMoura/Aulas-Java-Curso-em-Video);
 - [Video course - Java CRUD](https://github.com/LuanTMoura/Study-CRUD-Java);
-- [Video tutotials - Java Exceptions](https://github.com/LuanTMoura/Study-Exceptions);
-- [Video tutroials - Java Maven](https://github.com/LuanTMoura/Study-Maven);
-- [Video tutotials - Java Collections](https://github.com/LuanTMoura/Study-Java-Collections);
+- [Video tutorials - Java Exceptions](https://github.com/LuanTMoura/Study-Exceptions);
+- [Video tutorials - Java Maven](https://github.com/LuanTMoura/Study-Maven);
+- [Video tutorials - Java Collections](https://github.com/LuanTMoura/Study-Java-Collections);
 - [Video tutorials - Java API](https://github.com/LuanTMoura/Study-Java-API);
 
 # Projects
