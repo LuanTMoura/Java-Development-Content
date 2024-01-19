@@ -12,6 +12,7 @@
 - [Video tutorials - Java Maven](https://github.com/LuanTMoura/Study-Maven);
 - [Video tutorials - Java Collections](https://github.com/LuanTMoura/Study-Java-Collections);
 - [Video tutorials - Java API](https://github.com/LuanTMoura/Study-Java-API);
+- [Video tutorials - Java Spring Framework](https://github.com/LuanTMoura/Study-Java-Spring?tab=readme-ov-file);
 
 # Projects
 
