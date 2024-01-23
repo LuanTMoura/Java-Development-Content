@@ -17,7 +17,6 @@
 # Projects
 
 - [Simple Calculator - First project with Java Swing](https://github.com/LuanTMoura/Simple-Calculator);
-- [Simple Market - Java CRUD](https://github.com/LuanTMoura/MarketProject-Study-CRUD-Java);
 
 # List of content by order of study
 - [01. Java Basics](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/01.%20Java%20Basics.md);
