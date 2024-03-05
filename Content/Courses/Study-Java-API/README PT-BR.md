@@ -1,6 +1,6 @@
 # Estudos sobre API
  Nesse repositório busco anexar conteúdos que aprendi sobre API e API REST.
- Todo conteúdo que for anotado estará no arquivo do tipo Markdown [nesse link](https://github.com/LuanTMoura/Study-Java-API/blob/main/API%20and%20API%20Rest%20Study.md). Por fim, todos os arquivos de apoio e usados para exemplo das fontes de aprendizagem se encontrarão no repositório no qual você está lendo esse texto.
+ Todo conteúdo que for anotado estará no arquivo do tipo Markdown [nesse link](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/Study-Java-API/API%20and%20API%20Rest%20Study.md). Por fim, todos os arquivos de apoio e usados para exemplo das fontes de aprendizagem se encontrarão no repositório no qual você está lendo esse texto.
 
 # Fonte de aprendizado
 
