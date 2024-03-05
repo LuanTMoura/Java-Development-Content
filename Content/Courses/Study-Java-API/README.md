@@ -7,6 +7,6 @@
 
 # Selecione o idioma | Select Language
 
-[> Português-Brasil 🟢🟡](https://github.com/LuanTMoura/Study-Java-API/blob/main/README%20PT-BR.md)
+[> Português-Brasil 🟢🟡](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/Study-Java-API/README%20PT-BR.md)
 
-[> English 🔵🔴⚪](https://github.com/LuanTMoura/Study-Java-API/blob/main/README%20EN.md)
+[> English 🔵🔴⚪](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/Study-Java-API/README%20EN.md)
