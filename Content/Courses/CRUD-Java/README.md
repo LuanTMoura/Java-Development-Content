@@ -2,6 +2,6 @@
 
   # Selecione o idioma | Select Language
 
-[> Português-Brasil 🟢🟡](https://github.com/LuanTMoura/Study-CRUD-Java/blob/main/READEME-PTBR.md)
+[> Português-Brasil 🟢🟡](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/CRUD-Java/READEME-PTBR.md)
 
-[> English 🔵🔴⚪](https://github.com/LuanTMoura/Study-CRUD-Java/blob/main/README-EN.md)
+[> English 🔵🔴⚪](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/CRUD-Java/README-EN.md)
