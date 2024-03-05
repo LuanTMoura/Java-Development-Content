@@ -13,6 +13,7 @@
 - [Video tutorials - Java Collections](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/Study-Java-Collections);
 - [Video tutorials - Java API](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/Study-Java-API);
 - [Video tutorials - Java Spring Framework](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/Study-Java-Spring);
+- [Video tutorials - JPA and Hibernate](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/Study-JPA-Hibernate);
 
 # Projects
 
@@ -36,3 +37,4 @@
 - [15. Java Collections](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/15.%20Java%20Collections.md);
 - [16. Java API](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/16.%20Java%20API.md);
 - [17. Spring Framework and Spring Boot](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/17.%20Java%20Spring.md);
+- [18. Java Persistence API and Hibernate](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/18.%20Java%20Persistence%20API%20and%20Hibernate.md);
