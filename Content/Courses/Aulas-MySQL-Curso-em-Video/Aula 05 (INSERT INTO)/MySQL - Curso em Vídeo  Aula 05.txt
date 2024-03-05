@@ -1,0 +1,38 @@
+MySQL - Curso em Vídeo  Aula 05
+
+01.
+DDL which means Data Definition Language, implies that CREATE DATABASE and CREATE TABLE are DDL commands or commands of definition. Example: to create a table, we use a command to do this, in other words, DDL.
+
+02.
+Date on MySQL is the contrary to date on Brazil (Year, month, and day) and written with a trace, like:
+
+	year-month-day.
+
+03.
+When we create a value with auto increment as a primary key, we don't need to input anything with INSERT INTO to register a field.
+
+04.
+To show everything in a table, we use a command select from. Example:
+
+	select * from people.
+
+05.
+If we create a field predefined like an ID with auto_icrement or something like a nationality with a default name, we use the INSERT INTO with DEFAULT. Example:
+
+	insert into people
+	(name, birth, gender, weight, nationality)
+	values
+	('Pedrinho','2020-05-18','M','15.4',DEFAULT);
+
+06.
+It's unnecessary to name the order of values that gonna be inserted before the insert, as long as the inputs are in order of table. Example:
+
+	insert into people values (...);
+
+07.
+As long as the data are separated by command and dot comma at the final, it's possible to add more than one register inside the table. Example:
+
+	insert into people values (...), (...), (...);
+
+08.
+The INSERT INTO command is a DML command, which means Data Manipulation Language.

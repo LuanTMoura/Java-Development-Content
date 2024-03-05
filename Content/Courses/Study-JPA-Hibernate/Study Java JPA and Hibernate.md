@@ -1,0 +1,182 @@
+# Java Persistence API and Hibernate
+A set of specifications for defining data persistence behavior. In other words, JPA is used for communicate with database. And Hibernate is responsible to traduce entity relationship to objects inside Java.
+There's a implementations to o this:
+- Hibernate;
+- OpenJPA;
+- EclipseLink;
+- Batoo.
+
+## Persistence.xml file
+Inside this archive that is locate inside the path META-INF, there are all database configurations, set of implementations, etc. So these are the tags that compose the structure:
+- ``<persistence-unit name="database_example" transaction-type="JTA">`` - persistence unit is a tag of persistence, after this is declared the name of database and the transaction type means what will control the transactions, in this case, "JTA" means that database's server is the responsible to do this;
+- ``<provider>org.hibernate.ejb.HibernatePersistence</provider>`` - provider means the type of implementation that will be set inside the project;
+- ``<class>com.jpa.model.ClasseA</class>`` - tag responsible to identify what is the entity that will be handle;
+- ``<properties></properties>`` - the tag responsible to organize configurations as the URL path to access database, the type of database, username, password etc.
+
+Full archive:
+```xml
+<!-- persistence.xml // omitted statements-->
+<persistence-unit name="database_example" transaction-type="JTA">
+	<provider>org.hibernate.ejb.HibernatePersistence</provider>
+	<class>com.jpa.model.ClasseA</class>
+<properties>
+	<property name="javax.persistence.jdbc.driver" value="orghsqldb.jdbcDriver"/>
+	<property name="javax.persistence.jdbc.url" value="jdbc:hsqldb: mem: hibernate"/>
+	<property name="javax.persistence.jdbc.user" value="sa"/>
+	<property name="javax.persistence.jdbc.password" value="senha"/>
+</properties>
+</persistence-unit>
+```
+
+## Controlling transactions: manually vs server vs framework
+
+The manual way to control transactions is creating connection with database, perform some actions inside database like create, read etc., and close the connection. For example:
+
+```java
+public class Jpa {
+	private static EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("Banco_A");
+	public static void main(String[] args) throws Exception {
+		EntityManager entityManager = entityManagerFactory.createEntityManager();
+	try {
+		entityManager.getTransaction().begin();
+		// do something
+		entityManager.getTransaction().commit();
+	} catch (Exception e) {
+		if(entityManager.isOpen()){
+	entityManager.getTransaction().rollback();
+		}
+	} finally {
+		if(entityManager.isOpen()){
+	entityManager.close();
+		}
+	}
+}
+```
+
+## Server controlling transactions
+
+And when you give the responsibility of do all these transactions by server, you indicate with a annotation what are the points of injections inside the entity that will be operate something. Example of server applications: Jboss and Glassfish;
+
+These servers will use the command ``Persistence.creatwEntityManagerFactory();``, a instance of Entity Manager Factor that use dependency injection and he do this with EJB (Enterprise JavaBeans). Example of a class without state, also with a annotation that maps where will be done the connection:
+
+```java
+@Stateless
+public class ClasseJPA(){
+	@PersistenceContext
+	private EntityManager entityManager;
+}
+```
+
+## Framework controlling transactions
+
+It1s possible do the same thing as EJB with a framework, for example, Spring Framework, that use his containers to do the operations of transactions with database. Also, it's crucial add dependencies of JPA using TomCat, Jetty etc. And then, after use these dependencies, you indicate inside your classes whit annotations what are the responsibilities of Framework inside the point of injection.
+
+# Mapping with JPA in practice
+
+ The steps to use JPA and Hibernate in Java is simple:
+ - Create an object inside a class;
+ - Map object with JPA.
+
+##### Example:
+First, you use the annotation ``Entity`` to indicate the object which Hibernate will know where to construct tables automatically. Also, add the annotation ``Table`` to specify the name of table (in the otherwise, will generate a table with the same name as class name).
+
+```java
+@Entity
+@Table ("_usertable")
+public class UserEntity {
+
+	private Long id;
+
+	private String name;
+
+	private String login;
+
+	private String password;
+
+	private String email;
+}
+```
+
+Every table needs a primary key, to do this we use the annotation ``@Id`` and also, specify what will be the strategy that primary keys will be mapped inside database (if will be a sequence of numbers or a specific id-codes) with ``@GenerateValue(strategy = GenerationType.IDENTITY)``. Identity means that the code will be generated with sequencial numbers and UUID means that will be generated with random codes.
+
+```java
+@Entity
+@Table ("_usertable")
+public class UserEntity {
+
+	@Id
+	@
+	private Long id;
+
+	private String name;
+
+	private String login;
+
+	private String password;
+
+	private String email;
+}
+```
+
+We also add a standard pattern to receive data, like a fiel not null.
+
+```java
+@Entity
+@Table ("_usertable")
+public class UserEntity {
+
+	@Id
+	@
+	private Long id;
+
+	@Column (nullable = false)
+	private String name;
+
+	@Column (nullable = false)
+	private String login;
+
+	@Column (nullable = false)
+	private String password;
+
+	@Column (nullable = false)
+	private String email;
+}
+```
+
+It's important to think about the organization of data inside database, so one user can not have the same information as another user. To do this, we use a JPA specification name as ``unique``.
+
+```java
+@Entity
+@Table ("_usertable")
+public class UserEntity {
+
+	@Id
+	@
+	private Long id;
+
+	@Column (nullable = false)
+	private String name;
+
+	@Column (nullable = false, unique = true)
+	private String login;
+
+	@Column (nullable = false)
+	private String password;
+
+	@Column (nullable = false)
+	private String email;
+}
+```
+
+To finish mapping the object, is important to encapsulate all of these objects using getters and setters.
+
+###### Last configurations
+To make everything works good, we need to set the dialect that we are using to create database, it means what will be the specifications of the relational database tools that gonna carry the entity created.
+Steps:
+- Access the file ``application.propeties``;
+- Add in the last line the following command: ``spring.jpa.database-plataform=org.hibernate.dialect.PostgresSQLDialect`` (or MySQL, MongoDB etc).
+
+Also, we add another command line with parameters that when we initiate Hibernate, this parameter will create a table indicated inside my entity.
+- ``spring.jpa.show-sql=true``
+
+It's finished, just click on run project.

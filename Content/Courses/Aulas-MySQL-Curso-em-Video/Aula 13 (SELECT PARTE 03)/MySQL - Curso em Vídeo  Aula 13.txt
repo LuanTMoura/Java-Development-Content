@@ -1,0 +1,66 @@
+MySQL - Curso em Vídeo  Aula 13
+
+01.
+The function of DISTINCT is to ELIMINATE duplicate records depending on ALL fields listed in the respective SELECT. The function of GROUP BY is to GROUP duplicate field(s) using an aggregate function, for example: "COUNT", "SUM", "MAX", "MIN", etc. You can combine two functions as well.
+
+02.
+The difference in practice is, that when you distinct items from a list, you are separating them and using as reference all data that is repeating each other (and deleting copies, of course).
+And with the group by, you a >group the itens< that are repeating, and by selecting them as a group,  you can count the groups, sum the groups, etc.
+For example:
+
+	select distinct totaulas from cursos order by totaulas;
+	select totaulas from cursos group by totaulas order by totaulas;
+
+And if you add count to group by, he gonna show how many items by that column were grouped.
+Example:
+
+	select totaulas, count(*) from cursos group by totaulas order by totaulas;
+
+03.
+It's possible to group by specific limit when are passing specific parameters to search on the database with group by. Example:
+
+	select carga, count(nome) from cursos group by carga having count(nome)>3;
+
+Having can be used only with the column specified on the group by, in the example above, 
+just with carga. 
+
+Example grouping year and show how many courses have on them:
+select ano, count(*) from cursos group by ano order by count(*) desc;
+And now, separating them with specific terms:
+
+	select ano, count(*) from cursos 
+	group by ano 
+	having count(ano) >= 5  
+	order by count(*) desc;
+
+04.
+Besides these rules, nothing prevents us from specifying even more with where.
+Example:
+
+	select ano, count(*) from cursos 
+	where totaulas > 30 
+	group by ano 
+	having ano > 2013 
+	order by count(*) desc;
+
+05.
+Also, it's possible to use a select inside another select. For example:
+select avg(carga) from cursos; (the average from the sum of all cargas
+and divide by a number of cursos).
+
+And now, we gonna limit to showing just all items from cursos above the average
+number of cargas above whole cursos data.
+
+	select  carga, count(*) from cursos 
+	where ano > 2015
+	group by carga 
+	having carga > (select avg(carga) from cursos;);
+
+What's happened?
+
+	- carga from curso was selected;
+	- the search on the database was filtred;
+	- the results were grouped;
+	- and the group shows only the condition
+	inside having function parameters,
+	which was average from cursos.

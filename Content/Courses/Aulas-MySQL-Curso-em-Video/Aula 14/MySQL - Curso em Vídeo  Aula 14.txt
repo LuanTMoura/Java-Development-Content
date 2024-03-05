@@ -1,0 +1,68 @@
+MySQL - Curso em Vídeo  Aula 14
+
+01.
+The Relational Model of databases means that every data has a relationship with each other and meanings with themselves.
+Example: 
+		Table person: his attributes;
+		Table market: hist attributes;
+		Both databases can be connected with a specific relationship: with orders for example and how much this affects the slot.
+
+02.
+Every group of data with several pieces of information is called **Entity**. And data is equal to **Attribute**.
+
+03.
+Data are represented as Attributes, and these attributes gonna represent Tuples, Registers, and Information stored inside Entities. 
+
+04.
+And between an entity and another, there will be a Relationship. They are represented by a diamond - As the entity is represented rectangle.
+
+[IMAGE FROM DESKTOP]
+
+05.
+There are several types of relationships: ternary, quaternary, etc. And the example above is a double relationship.
+
+06.
+This diagram is called Diagram Entity-Relationship, Diagram E-R, or just DER.
+
+07.
+And there's a way to represent how attributes can be connected. For example: a person can watch several (n) courses and courses can be watched by several (n) people.
+
+[IMAGE FROM DESKTOP]
+
+And this "n" is called cardinality, which means attributes can have one or more relationships.
+
+08.
+There's a simple type of relationship called one-to-one. And can be represented as:
+
+[IMAGE FROM DESKTOP]
+
+09.
+Also exist the relationship one-to-many, represented as:
+
+[IMAGE FROM DESKTOP]
+
+10.
+So, the first example can be named as many-to-many.
+
+11.
+When a primary key is passed for another entity that already has a PK, they gonna be called a foreign key, as a "copy" of a primary key that went from outside.
+
+12.
+When we define the types of a primary key and pass as a foreign key, they MUST be the same to match each other. Example: 
+		cpf-esposo int;
+		cpf-esposa int;
+
+13.
+As a technique meaning, we define a dominant entity and pass a foreign key to another entity.
+Examples:
+
+[IMAGE FROM DESKTOP]
+
+[IMAGE FROM DESKTOP]
+
+And, when there's a many-to-many relationship, we transform the relationship represented as a diamond into a rectangle, in other words, another entity. With the relationship with each entity separated, we create a conjunction of relationships of one-to-many:
+
+[IMAGE FROM DESKTOP]
+
+
+

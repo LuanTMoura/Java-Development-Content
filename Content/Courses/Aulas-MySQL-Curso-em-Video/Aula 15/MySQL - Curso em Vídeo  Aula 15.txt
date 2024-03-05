@@ -1,0 +1,75 @@
+MySQL - Curso em Vídeo  Aula 15
+
+01.
+All database programs have an engine, and the default engine of MySQL (bought by Oracle) is InnoDB.
+
+02.
+InnoDB's main characteristic is to support foreign keys.
+
+03.
+A Foreign Key shouldn't have the same name as the Primary Key. But MUST have the same type and size.
+
+04.
+To add a Foreign Key, we follow the next steps for example:
+
+		alter table gafanhotos add column cursopreferido int;
+		alter table gafanhotos add foreign key (cursopreferido) references cursos(idcurso);
+
+After this, the foreign key gonna be represented as MUL, which means Multiple Key or Mul-Key.
+To start creating a relationship with each entity (gafanhotos e cursos), we continue as:
+
+		update gafanhotos set cursopreferido = '6' where id = '1';
+
+On this command, '6' references 'MySQL' and '1' a person with several attributes, so the connection is: That person with the id '1', likes (are to be set) the cursopreferido '6', 'MySQL'.
+
+05.
+In theory, if we have several data, we set the command update several times. But we can set it one by one inside the SQLW on the empty fields. Doing this, a button called Apply appears, so just click him and MyQSL gonna do the commands by himself.
+
+06.
+We can't delete attributes that already have a relationship with other attributes from another entity, because it generates an inconsistency. That means there's referential integrity.
+
+07.
+To show the name of a foreign key, there's a command that has the function of junction, and it is called JOIN. For example:
+
+		select gafanhotos.nome, gafanhotos.cursopreferido, cursos.nome, cursos.ano from gafanhotos join cursos;
+
+What's happened here?
+
+		- We select each attribute from their entities and make a junction of them.
+
+There's a clause to filter each data separated, whitout repeat the same information, and we use >on< to do this. Example:
+
+		select gafanhotos.nome, gafanhotos.cursopreferido, cursos.nome, cursos.ano from gafanhotos join cursos on cursos.idcurso = gafanhotos.cursopreferido;
+
+What's happened here?
+
+		- We made a junction with the Primary Key idcurso with the Foreign Key cursopreferido;
+
+08.
+"What's going on with the other data registered", to understand first, we have done an INNER JOIN, which means a JUNCTION with each data, so that's why the other information is not included on the select.
+
+09.
+We also can shorten our code line with the "as" command before and after inner join (or just join).
+Example:
+
+		select g.nome, g.cursopreferido, c.nome, c.ano 
+		from gafanhotos as g inner join cursos as c 
+		on c.idcurso = g.cursopreferido;
+
+10.
+To show everything, including the data out of the junction, we use OUTER JOIN. 
+To specify the table we are using, we digit the side of what table are gonna show by select.
+Example:
+
+		select g.nome, g.cursopreferido, c.nome, c.ano 
+		from gafanhotos as g left outer join cursos as c 
+		on c.idcurso = g.cursopreferido;
+
+The table used in the example is gafanhotos because he is on the left of the outer join. And isn't necessary to digit outer, MySQL will understand it as an outer join.
+
+		from gafanhotos as g left join cursos as c 
+
+So, as the following logical terms, the contrary will be:
+
+		from gafanhotos as right join cursos as c 
+		from gafanhotos as right outer join cursos as c 

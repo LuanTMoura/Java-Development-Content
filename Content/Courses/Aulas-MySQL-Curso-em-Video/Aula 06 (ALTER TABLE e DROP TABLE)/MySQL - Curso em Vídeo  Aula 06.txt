@@ -1,0 +1,71 @@
+MySQL - Curso em Vídeo  Aula 06
+
+01.
+To do something with a field inside of a table, we use the command "alter table". With him, we add the command to be executed (drop - means delete, modify, and add). Example:
+
+	alter table people drop age; 
+	or alter table people modify nationality varchar (30); 
+	or alter table people add gender;
+
+02.
+Using after table, we also can add using the command add column. Example:
+
+	alter table people add column profession varchar (10);
+
+The contrary would be drop column.
+
+03.
+To add a column after another specific column we use add column + after nameofcolumn.
+Example:
+
+	alter table people add column profession varchar (10) after name;
+
+Doesn't exist "before", but we can add some column before every field, like:
+
+	alter table people add column code int first;
+
+04.
+With the command MODIFY, we can change constraints and primitive types (except the name). 
+Example: 
+
+	alter table people modify column profession varchar (35) not null default '';
+
+(If we don't write default with no space, gonna generates an error because we can't overwrite another constraint, in this case, was null).
+
+05.
+To change the name of a column, we use the following syntax:
+
+	alter table nameoftable >change column< columnoldname newcolumnname configuration
+
+(if there's a constraint defined as null). 
+Example:
+configurated as null 
+
+	alter table people change column profession professioname varchar (35) not null default '';
+
+with no configuration
+
+	alter table people change column profession professioname varchar (35);
+
+In other words, we modify the name and MUST modify constraints as well.
+
+06.
+To change the name of the hole table, we use the following example:
+
+	alter table nameoftable rename to newname;
+
+07.
+There is a command followed by create table called "if not exists", that helps to create a table without overwriting another. Example: 
+
+	create table if not exists cursos.
+
+08.
+UNIQUE and PRIMARY KEY are different things. UNIQUE can be null and both ensure the uniqueness of the data, the PRIMARY KEY is used to uniquely identify each register in a table and can establish relationships with other tables. On the other hand, the UNIQUE simply ensures that the data in a specific column are unique.
+
+09.
+USIGNED means charge without signal. This means that gonna be one byte by each register that has workload registered.
+
+10.
+To add a primary key to a column that has been created, we use ADD PRIMARY KEY. Example:
+
+	alter table course add primary key idcourse int first;

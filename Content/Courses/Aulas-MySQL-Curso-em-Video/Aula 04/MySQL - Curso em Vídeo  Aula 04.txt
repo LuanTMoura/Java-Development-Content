@@ -1,0 +1,60 @@
+MySQL - Curso em Vídeo  Aula 04
+
+01.
+To delete some database, you use the command: 
+
+	drop database databasename; or CTRL+ENTER;
+
+02.
+There is a parameter called Constraint, that is used to limit the type of data that can go into a table and digited after create database. 
+The command to set this parameter is: default character set utf8 
+(utf8 is always lowercase and used for LATAM characters)
+
+03.
+Collations are used to organize characters and set by the command default collate utf8_general_ci;
+
+04.
+The constraint NOT NULL is used to force the user to set something on a field (like a name) and you digit after the field type.
+
+05.
+Birth can be defined by the type: date.
+
+06.
+When we are using the type >enum<, this means that the user has only the parameters defined by the table to choose from. Example:
+
+	sex enum ('M', 'F');
+
+07.
+And now, when we define something with the type >decimal<, we decide a number
+that gonna be set before and after a comma. 
+Example: 
+
+	decimal (5,2) -> Five spaces of digits and two spaces of digits after comma 
+
+(so, it's possible to digit a number like "147,56").
+
+08.
+The constraint DEFAULT is used to set optional choices if the user doesn't have something
+to digit. Like:
+
+	nationality varchar (20) DEFAULT 'Brasil'.
+
+08.
+After creating the fields inside the table, we close the line of command with
+DEFAULT CHARSET = utf8;
+
+09.
+To differentiate a register, we use a PRIMARY KEY, that creates different registers
+to similar fields, like a name. Generally used with int.
+
+10.
+There is a constraint to creating a register after another already created
+and is called AUTO_INCREMENT.
+
+11.
+Using both tips above, we create "id" to differentiate registers, for example:
+
+	"id int NOT NULL AUTO_INCREMENT" and at the final of definition em digit "PRIMARY KEY (id)".
+
+12.
+Constraints are separated by an "_".

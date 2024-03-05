@@ -1,0 +1,1 @@
+select * from gafanhotos where sexo = 'F';

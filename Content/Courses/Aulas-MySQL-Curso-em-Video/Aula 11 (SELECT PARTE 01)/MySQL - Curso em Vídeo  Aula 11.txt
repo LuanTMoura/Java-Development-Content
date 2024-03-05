@@ -1,0 +1,60 @@
+MySQL - Curso em Vídeo  Aula 11
+
+01.
+The asterisks from SELECT * FROM means every column.
+
+02. 
+We can select a table ordering by specific columns, like:
+select * from course order by name;
+
+03. 
+Also, we can select descending items. Example:
+
+	select * from course order by name desc; 
+	- desc as a command is describe and desc as
+	a parameter is descending.
+
+And asc as a parameter is ascending.
+
+04.
+We also can filter the column's name by their specifications.
+Example: select nome, carga, ano from cursos order by nome;
+Which implies changing the order in other ways, for example:
+
+	select ano, carga, nome from cursos order by ano, nome;
+
+05.
+To filter by lines, we add the WHERE before
+the ORDER BY to specify parameters. Example:
+select * from cursos where ano = '2016' order by nome;
+To limit by specific columns, we do the same as
+the example above:
+
+	select nome, carga from cursos where ano = '2016' order by nome;
+
+06.
+We also can use relational operators to filter by some specific
+terms. Example:
+	select nome, descricao from cursos where ano <= '2015' order by nome;
+	select nome, descricao from cursos where ano >= '2015' order by nome;
+	select nome, descricao from cursos where ano = '2015' order by nome;
+	select nome, descricao from cursos where ano < '2015' order by nome;
+	select nome, descricao from cursos where ano > '2015' order by nome;
+	select nome, descricao from cursos where ano != '2015' order by nome;
+
+07.
+There is another operator that we can use, it's similar to
+BETWEEN and he is called IN. The difference between them is:
+You filter BETWEEN and the data will be all of the parameters inside
+at this condition. And IN will limited by the specific parameter requested. Example:
+	select nome, ano from cursos where ano between 2014 and 2016 order by ano desc, nome asc;
+	select nome, ano from cursos where ano in (2014, 2016) order by ano desc, nome asc;
+
+08.
+And to finish, it's possible to use logical operators with select. Example:
+	select nome, carga, totaulas from cursos where carga > 35 and totaulas < 30;
+	select nome, carga, totaulas from cursos where carga > 35 or totaulas < 30;
+
+09.
+Select is classified as Data Query Language, which means a language for questions.
+In other words, he selects data and operates what is requested (questioned).
