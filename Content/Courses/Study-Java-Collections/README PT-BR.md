@@ -1,6 +1,6 @@
 # Estudos de Coleções Java
  Nesse repositório busco anexar conteúdos que aprendi sobre Coleções Java.
- Todo conteúdo que for anotado estará no arquivo do tipo Markdown [nesse link](https://github.com/LuanTMoura/Study-Java-Collections/blob/main/Java-Collections-Study.md). Por fim, todos os arquivos de apoio e usados para exemplo das fontes de aprendizagem se encontrarão no repositório no qual você está lendo esse texto.
+ Todo conteúdo que for anotado estará no arquivo do tipo Markdown [nesse link](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/Study-Java-Collections/Java-Collections-Study.md). Por fim, todos os arquivos de apoio e usados para exemplo das fontes de aprendizagem se encontrarão no repositório no qual você está lendo esse texto.
 
 # Fonte de aprendizado
 
