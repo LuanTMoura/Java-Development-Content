@@ -1,6 +1,6 @@
 # Studies Java Spring
 In this repository, I seek to attach content that I learned about the Spring Framework.
-All content that is annotated will be in the Markdown file [at this link](https://github.com/LuanTMoura/Study-Java-Spring/blob/main/Java%20Spring.md). Finally, all support files and those used as examples of learning sources will be found in the repository where you are reading this text.
+All content that is annotated will be in the Markdown file [at this link](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/Study-Java-Spring/Java%20Spring.md). Finally, all support files and those used as examples of learning sources will be found in the repository where you are reading this text.
 
 # Learning source
 
