@@ -1,6 +1,6 @@
 # Estudos sobre Spring Framework
  Nesse repositório busco anexar conteúdos que aprendi sobre Spring Framework.
- Todo conteúdo que for anotado estará no arquivo do tipo Markdown [nesse link](https://github.com/LuanTMoura/Study-Java-Spring/blob/main/Java%20Spring.md). Por fim, todos os arquivos de apoio e usados para exemplo das fontes de aprendizagem se encontrarão no repositório no qual você está lendo esse texto.
+ Todo conteúdo que for anotado estará no arquivo do tipo Markdown [nesse link](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/Study-Java-Spring/Java%20Spring.md). Por fim, todos os arquivos de apoio e usados para exemplo das fontes de aprendizagem se encontrarão no repositório no qual você está lendo esse texto.
 
 # Fonte de aprendizado
 
