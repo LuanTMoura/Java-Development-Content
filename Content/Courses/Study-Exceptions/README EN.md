@@ -1,6 +1,6 @@
 # Exception Studies
 In this repository, I seek to attach content that I learned about Maven.
-All the content that is annotated will be in the Markdown file [at this link](https://github.com/LuanTMoura/Study-Exceptions/blob/main/Java%20Try%20Catch%20Study.md). Finally, all the supporting files and examples from learning sources will be found in the repository where you are reading this text.
+All the content that is annotated will be in the Markdown file [at this link](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/Study-Exceptions/Java%20Try%20Catch%20Study.md). Finally, all the supporting files and examples from learning sources will be found in the repository where you are reading this text.
 
 # Learning Source
 
