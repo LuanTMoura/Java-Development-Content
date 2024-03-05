@@ -7,7 +7,7 @@
 
 # Selecione o idioma | Select Language
 
-[> Português-Brasil 🟢🟡]()
+[> Português-Brasil 🟢🟡](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/Study-JPA-Hibernate/README%20PT-BR.md)
 
-[> English 🔵🔴⚪]()
+[> English 🔵🔴⚪](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/Study-JPA-Hibernate/README%20EN.md)
 
