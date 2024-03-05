@@ -1,6 +1,6 @@
 # Study-Maven
 
-In this repository, I aim to attach content that I have learned about Maven. All annotated content will be in the Markdown file [at this link](https://github.com/LuanTMoura/Study-Maven/blob/main/Maven%20Study%20Notes.md). Finally, all supporting files and examples from learning sources can be found in the repository where you are reading this text.
+In this repository, I aim to attach content that I have learned about Maven. All annotated content will be in the Markdown file [at this link](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/Study-Maven/Maven%20Study%20Notes.md). Finally, all supporting files and examples from learning sources can be found in the repository where you are reading this text.
 
 # Learning Source
 
