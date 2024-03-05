@@ -1,5 +1,5 @@
 # Java Collections Studies 
-In this repository, I seek to attach content that I learned about Java Collections. All content that is annotated will be in the Markdown file [at this link](https://github.com/LuanTMoura/Study-Java-Collections/blob/main/Java-Collections-Study.md). Finally, all support files and those used as examples from learning sources will be found in the repository where you are reading this text.
+In this repository, I seek to attach content that I learned about Java Collections. All content that is annotated will be in the Markdown file [at this link](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/Study-Java-Collections/Java-Collections-Study.md). Finally, all support files and those used as examples from learning sources will be found in the repository where you are reading this text.
 
 # Learning source
 
