@@ -6,13 +6,13 @@
 
 # Repositories of courses, video courses and tutorials
 
-- [Course Java - Java Basics](https://github.com/LuanTMoura/Aulas-Java-Curso-em-Video);
-- [Video course - Java CRUD](https://github.com/LuanTMoura/Study-CRUD-Java);
-- [Video tutorials - Java Exceptions](https://github.com/LuanTMoura/Study-Exceptions);
-- [Video tutorials - Java Maven](https://github.com/LuanTMoura/Study-Maven);
-- [Video tutorials - Java Collections](https://github.com/LuanTMoura/Study-Java-Collections);
-- [Video tutorials - Java API](https://github.com/LuanTMoura/Study-Java-API);
-- [Video tutorials - Java Spring Framework](https://github.com/LuanTMoura/Study-Java-Spring?tab=readme-ov-file);
+- [Course Java - Java Basics](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/Aulas-MySQL-Curso-em-Video);
+- [Video course - Java CRUD](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/CRUD-Java);
+- [Video tutorials - Java Exceptions](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/Study-Exceptions);
+- [Video tutorials - Java Maven](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/Study-Maven);
+- [Video tutorials - Java Collections](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/Study-Java-Collections);
+- [Video tutorials - Java API](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/Study-Java-API);
+- [Video tutorials - Java Spring Framework](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/Study-Java-Spring);
 
 # Projects
 
