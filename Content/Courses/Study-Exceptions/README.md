@@ -7,6 +7,5 @@
 
  # Selecione o idioma | Select Language
 
-[> Português-Brasil 🟢🟡](https://github.com/LuanTMoura/Study-Exceptions/blob/main/README%20PT-BR.md)
-
-[> English 🔵🔴⚪](https://github.com/LuanTMoura/Study-Exceptions/blob/main/README%20EN.md)
+[> Português-Brasil 🟢🟡](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/Study-Exceptions/README%20PT-BR.md)
+[> English 🔵🔴⚪](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/Study-Exceptions/README%20EN.md)
