@@ -1,4 +1,4 @@
-# Java Microservices
+# Study Java Microservices
 
 Microservices architecture is a valuable approach for building modern, complex applications. It requires careful planning and coordination but offers significant benefits in terms of flexibility, scalability, and maintainability.
 
