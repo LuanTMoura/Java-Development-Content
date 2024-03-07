@@ -1,5 +1,5 @@
 # Studies on Spring Framework
-In this repository, I aim to attach content that I've learned about the Spring Framework.
+In this repository, I aim to attach content that I've learned about JPA e Hibernate.
 All content that is annotated will be in a Markdown file [at this link](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/Study-JPA-Hibernate/Study%20Java%20JPA%20and%20Hibernate.md). Finally, all support files and those used as examples from the learning sources will be found in the repository you are reading this text.
 
 # Learning Source
