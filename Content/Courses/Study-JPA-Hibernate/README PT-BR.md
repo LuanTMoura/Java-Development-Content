@@ -1,5 +1,5 @@
 # Estudos sobre Spring Framework
- Nesse repositório busco anexar conteúdos que aprendi sobre Spring JPA e Hibernate.
+ Nesse repositório busco anexar conteúdos que aprendi sobre JPA e Hibernate.
  Todo conteúdo que for anotado estará no arquivo do tipo Markdown [nesse link](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/Courses/Study-JPA-Hibernate/Study%20Java%20JPA%20and%20Hibernate.md). Por fim, todos os arquivos de apoio e usados para exemplo das fontes de aprendizagem se encontrarão no repositório no qual você está lendo esse texto.
 
 # Fonte de aprendizado
