@@ -14,7 +14,7 @@
 - [Video tutorials - Java API](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/Study-Java-API);
 - [Video tutorials - Java Spring Framework](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/Study-Java-Spring);
 - [Video tutorials - JPA and Hibernate](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/Study-JPA-Hibernate);
-- [Video tutorials and course - Microservices](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/Study-Java-Microservices)
+- [Video tutorials and course - Microservices](https://github.com/LuanTMoura/Java-Development-Content/tree/main/Content/Courses/Study-Java-Microservices);
 
 # Projects
 
