@@ -19,7 +19,7 @@
 # Projects
 
 - [Simple Calculator - First project with Java Swing](https://github.com/LuanTMoura/Simple-Calculator);
-
+- [Restaurant Menu - A simple menu with Spring Boot and React](https://github.com/LuanTMoura/Restaurant-Menu-SpringBoot-React);
 # List of content by order of study
 - [01. Java Basics](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/01.%20Java%20Basics.md);
 - [02. Java Data Types](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/02.%20Java%20Data%20Types.md);
