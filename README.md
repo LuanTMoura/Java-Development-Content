@@ -39,3 +39,5 @@
 - [16. Java API](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/16.%20Java%20API.md);
 - [17. Spring Framework and Spring Boot](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/17.%20Java%20Spring.md);
 - [18. Java Persistence API and Hibernate](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/18.%20Java%20Persistence%20API%20and%20Hibernate.md);
+- [19. Spring MVC](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/19.%20Spring%20MVC.md);
+- [20. Java Microservices](https://github.com/LuanTMoura/Java-Development-Content/blob/main/Content/20.%20Java%20Microservices.md);
